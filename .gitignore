@@ -1,0 +1,10 @@
+#Ignore
+
+#Directories
+.vscode
+*/.vscode
+*/bin/
+*/obj/
+
+#Misc
+.DS_Store
