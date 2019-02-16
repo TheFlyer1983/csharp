@@ -1,8 +1,28 @@
 ﻿using System;
-
+using System.Collections.Generic;
 namespace interpolated
 {
-    public class Vegetable
+    public class Example
+    {
+      public static void Main()
+      {
+        var titles = new Dictionary<string, string>()
+        {
+          ["Doyle, Arthur Conan"] = "Hound of the Baskervilles, The",
+          ["London, Jack"] = "Call of the Wild, The",
+          ["Shakespeare, William"] = "Tempest, The" 
+        };
+        Console.WriteLine("Author and Title List");
+        Console.WriteLine();
+        Console.WriteLine($"|{"Author",-25}|{"Title",30}|");
+        foreach (var title in titles)
+        {
+            Console.WriteLine($"|{title.Key,-25}|{title.Value,30}|");
+        }
+      }
+    }
+
+    /* public class Vegetable
     {
       public Vegetable(string name) => Name = name;
 
@@ -23,7 +43,7 @@ namespace interpolated
         var unit = Unit.item;
         Console.WriteLine($"On {date:d}, the price of {item} was {price:C2} per {unit}.");
       }
-    }
+    } */
     
     //class Program
     //{
