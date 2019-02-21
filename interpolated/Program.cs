@@ -6,7 +6,8 @@ namespace interpolated
     {
       public static void Main()
       {
-        var titles = new Dictionary<string, string>()
+        Console.WriteLine($"[{DateTime.Now,-20:d}] Hour [{DateTime.Now,-10:HH}] [{1063.342,15:N2}] feet");
+       /*  var titles = new Dictionary<string, string>()
         {
           ["Doyle, Arthur Conan"] = "Hound of the Baskervilles, The",
           ["London, Jack"] = "Call of the Wild, The",
@@ -14,11 +15,11 @@ namespace interpolated
         };
         Console.WriteLine("Author and Title List");
         Console.WriteLine();
-        Console.WriteLine($"|{"Author",-25}|{"Title",30}|");
+        Console.WriteLine($"|{"Author",25}|{"Title",30}|");
         foreach (var title in titles)
         {
-            Console.WriteLine($"|{title.Key,-25}|{title.Value,30}|");
-        }
+            Console.WriteLine($"|{title.Key,25}|{title.Value,30}|");
+        } */
       }
     }
 
